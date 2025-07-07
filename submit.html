@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit - Fit's Poetry Corner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="poems.html">Poems</a></li>
+      <li><a href="submit.html">Submit</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Submit Your Poem</h1>
+    <p>We welcome your beautiful words.</p>
+  </header>
+
+  <form name="poem-submission" method="POST" data-netlify="true" action="thank-you.html">
+    <input type="hidden" name="form-name" value="poem-submission" />
+    <input type="text" name="title" placeholder="Poem Title" required />
+    <textarea name="content" placeholder="Write your poem here..." rows="6" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>© 2025 Fit's Poetry Corner</p>
+  </footer>
+</body>
+</html>
